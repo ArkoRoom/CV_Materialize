@@ -1,0 +1,21 @@
+{
+  "name": "CV_Materialize",
+  "homepage": "https://github.com/ArkoRoom/CV_Materialize",
+  "authors": [
+    "Arkolips <catel.ludovic@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "private/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
