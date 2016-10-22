@@ -12,11 +12,250 @@
     <link rel="stylesheet" href="private/vendor/materialize/dist/css/materialize.min.css" media="screen" title="no title">
     <link rel="stylesheet" href="private/vendor/font-awesome/css/font-awesome.min.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css" media="screen" title="no title">
     <link rel="icon" type="image/png" href="public/img/cherry.jpg" />
   </head>
   <body>
-    <h1>CATEL Ludovic</h1>
+    <!-- Container-fluid HEADER -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 center-align">
+          <div class="img-header">
+            <img src="public/img/profile.jpg" alt="Profile_Catel_Ludovic" />
+          </div>
+          <div class="txt-header">
+            <h1>CATEL Ludovic<br>
+            Dévelopeur Web Junior
+            </h1>
+            <p>27 ans</p>
+            <p>Lille, Nord</p>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-wrapper">
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Expériences</a></li>
+            <li class="active"><a href="#">Compétences</a></li>
+            <li><a href="#">Réalisations</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /Container-fluid  HEADER -->
+
+    <div class="container">
+      <!-- Présentation -->
+      <div class="row" id="presentation">
+        <div class="col s10 offset-s1">
+          <h4>Bienvenue sur mon CV !</h4>
+          <p>
+            A l'origine formé dans le domaine de la Communication et des Industries Graphiques, c'est en 2015 que j'ai décidé de me réorienter dans le domaine du Web. <br>
+            Ne connaissant pas ce domaine, j'ai eu l'opportunité de participer à une initiation aux métiers du numériques au sein du programme Btech à la Cyber-Base d'Euratechnologies à Lille.<br>
+            A la suite de cette initiation, j'ai décidé de poursuivre ma formation en rejoignant la première session de Webforce3 à Lille.<br><br>
+            Vous pouvez accéder aux certificats obtenus lors de la formation Webforce3 en cliquant ci-dessous.
+          </p>
+          <div class="center-align">
+            <a class="waves-effect waves-light btn"><i class="material-icons left">web</i>Intégrateur Web</a>
+            <a class="waves-effect waves-light btn"><i class="material-icons left">settings_applications</i>Développeur Web</a>
+          </div>
+        </div>
+      </div>
+      <!-- /Présentation -->
+
+      <!-- Expériences -->
+      <div class="row" id="experiences">
+        <div class="col s10 offset-s1">
+          <h4>Mes Expériences</h4>
+          <p>
+            Etant actuellement Développeur Junior, je n'ai pas d'expériences significatives dans le domaine du Web.
+            Je vais donc vous mettre les projets sur lesquels j'ai travaillé lors de mon initiation Btech et de ma formation Webforce3 à Lille.
+            <br><br>
+            <span>Aout 2016 :</span> Projet "Famil'Ease", site de gestion pour famille divorcé.
+            J'ai été en charge d'une grosse partie du développement frontend.
+            Je venais également en aide quand je le pouvais sur divers petits bugs.
+            <br><br>
+            <span>Février 2016 :</span> Refonte du site "x2000", association dans le domaine des formations numériques à Lille.
+            Cette refonte n'a pas été sélectionnée et étant réalisée lors d'une initiation aux métiers du numérique, il y a forcément des erreurs de développement (tel que les includes en PHP, les formulaires qui ne fonctionnent pas...).
+            <br><br>
+            <span>Septembre 2012 à Aout 2015 :</span> Diverses expériences dans le domaine des industries graphiques en intérim ou CDD.
+          </p>
+        </div>
+      </div>
+      <!-- /Expériences -->
+
+      <!-- Compétences -->
+      <div class="row" id="competences">
+        <div class="col s10 offset-s1">
+          <h4>Mes Compétences</h4>
+          <p>
+            Voici le détail de mes compétences :
+          </p>
+          <div class="col s5 offset-s1">
+            <h5>Web</h5>
+            <table class="bordered highlight responsive-table">
+              <thead>
+                <tr>
+                  <th data-field="id">Langages</th>
+                  <th data-field="framework">Framework</th>
+                  <th data-field="tools">Outils</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML5</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CSS3</td>
+                  <td>Bootstrap, Materialize</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Javascript</td>
+                  <td>jQuery</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>PHP 5 & 7</td>
+                  <td>Architecture MVC</td>
+                  <td>POO</td>
+                </tr>
+                <tr>
+                  <td>SQL (MySQL)</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <span>Autres : </span>Sublime Text, Atom, Npm, Bower, Composer, Git, Trello.
+            </p>
+          </div>
+          <div class="col s5">
+            <h5>Print</h5>
+            <table class="bordered highlight responsive-table">
+              <thead>
+                <tr>
+                  <th data-field="softwares">Logiciels</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Adobe InDesign</td>
+                </tr>
+                <tr>
+                  <td>Adobe Photoshop</td>
+                </tr>
+                <tr>
+                  <td>Adobe Illustrator</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <span>Autres : </span>Créo, Preps7, Microsoft Office.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /Compétences -->
+
+      <!-- Création -->
+      <div class="row" id="creation">
+        <div class="col s10 offset-s1">
+          <h4>Mes Créations</h4>
+          <ul class="collapsible" data-collapsible="expandable">
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Réalisations / Participations</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Réalisation / Mini-jeux</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Réalisation / Effet</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /Création -->
+
+      <!-- Contact -->
+      <div class="row" id="contact">
+        <div class="col s10 offset-s1">
+          <h4>Me Contacter</h4>
+          <p>
+            Vous arrivez aux termes de ce CV.<br>
+            Merci de votre visite et n'hésitez pas à me contacter via le formulaire ci-dessous pour toutes demandes et/ou renseignements.<br>
+            N'hésitez pas à me suivre sur mes réseaux sociaux disponible dans le bas de la page.<br><br>
+            A bientôt !
+          </p>
+        </div>
+        <form class="col s6 offset-s3">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Nom</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Prénom</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Adresse e-mail</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Sujet</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">description</i>
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Message</label>
+          </div>
+          <div class="center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+              <i class="material-icons right">done</i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- /Contact -->
+    </div>
+    <!-- /Container -->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 offset-s1 center-align txt-footer">
+              © 2016 - Site réalisé par Ludovic CATEL - Version 1.2.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
 
     <script src="private/vendor/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="private/vendor/materialize/dist/js/materialize.min.js" charset="utf-8"></script>
