@@ -19,17 +19,19 @@
   <body>
     <!-- Container-fluid HEADER -->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col s12 center-align">
-          <div class="img-header">
-            <img src="public/img/profile.jpg" alt="Profile_Catel_Ludovic" />
-          </div>
-          <div class="txt-header">
-            <h1>CATEL Ludovic<br>
-            Dévelopeur Web Junior
-            </h1>
-            <p>27 ans</p>
-            <p>Lille, Nord</p>
+      <div class="row" id="img_header">
+        <div class="col s6 offset-s3 center-align">
+          <div id="header">
+            <div class="img-header">
+              <img src="public/img/profile_picture.jpg" alt="Profile_Catel_Ludovic" />
+            </div>
+            <div class="txt-header">
+              <h1>CATEL Ludovic<br>
+              Dévelopeur Web Junior
+              </h1>
+              <p>27 ans</p>
+              <p>Lille, Nord</p>
+            </div>
           </div>
         </div>
       </div>
@@ -48,10 +50,10 @@
     </div>
     <!-- /Container-fluid  HEADER -->
 
-    <div class="container">
+    <div class="container-fluid" id="container">
       <!-- Présentation -->
       <div class="row" id="presentation">
-        <div class="col s10 offset-s1">
+        <div class="col s6 offset-s3">
           <h4>Bienvenue sur mon CV !</h4>
           <p>
             A l'origine formé dans le domaine de la Communication et des Industries Graphiques, c'est en 2015 que j'ai décidé de me réorienter dans le domaine du Web. <br>
@@ -69,7 +71,7 @@
 
       <!-- Expériences -->
       <div class="row" id="experiences">
-        <div class="col s10 offset-s1">
+        <div class="col s6 offset-s3">
           <h4>Mes Expériences</h4>
           <p>
             Etant actuellement Développeur Junior, je n'ai pas d'expériences significatives dans le domaine du Web.
@@ -90,7 +92,7 @@
 
       <!-- Compétences -->
       <div class="row" id="competences">
-        <div class="col s10 offset-s1">
+        <div class="col s6 offset-s3">
           <h4>Mes Compétences</h4>
           <p>
             Voici le détail de mes compétences :
@@ -167,7 +169,7 @@
 
       <!-- Création -->
       <div class="row" id="creation">
-        <div class="col s10 offset-s1">
+        <div class="col s6 offset-s3">
           <h4>Mes Créations</h4>
           <ul class="collapsible" data-collapsible="expandable">
             <li>
@@ -189,7 +191,7 @@
 
       <!-- Contact -->
       <div class="row" id="contact">
-        <div class="col s10 offset-s1">
+        <div class="col s6 offset-s3">
           <h4>Me Contacter</h4>
           <p>
             Vous arrivez aux termes de ce CV.<br>
@@ -198,7 +200,7 @@
             A bientôt !
           </p>
         </div>
-        <form class="col s6 offset-s3">
+        <form class="col s4 offset-s4" id="form-contact">
           <div class="input-field col s12">
             <i class="material-icons prefix">account_circle</i>
             <input id="icon_prefix" type="text" class="validate">
@@ -237,11 +239,27 @@
 
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col s10 offset-s1">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <div class="col s6 offset-s3">
+            <h5 class="white-text">Me suivre</h5>
+            <div class="col s12 socials">
+              <a href="https://www.facebook.com/Arkolips" target="_blank">
+                <div class="social facebook"></div>
+              </a>
+              <a href="https://twitter.com/Arkolips" target="_blank">
+                <div class="social twitter"></div>
+              </a>
+              <a href="https://fr.linkedin.com/in/ludovic-catel" target="_blank">
+                <div class="social linkedin"></div>
+              </a>
+              <a href="https://github.com/ArkoRoom" target="_blank">
+                <div class="social git"></div>
+              </a>
+              <a href="https://plus.google.com/108315228598108840637" target="_blank">
+                <div class="social google"></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

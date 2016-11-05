@@ -1,8 +1,198 @@
 body{
-
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.3em;
 }
-.img-header, .txt-header {
+.txt-header {
   display: inline-block;
   vertical-align: top;
   padding-left: 20px;
+  color: #ffffff;
+}
+.img-header img{
+  position: relative;
+  width: 20%;
+  float: left;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 5px 5px 10px -1px #455a64;
+}
+
+#img_header{
+  background-image: url(../img/pattern2.png);
+  min-width: 300px;
+}
+#header{
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+}
+.row {
+  margin-bottom: 0px;
+}
+
+/***** Nav *****/
+
+nav{
+  background-color: #01579b;
+}
+
+/***** Présentation *****/
+
+#presentation{
+  background-color: #607d8b;
+  color: #cfd8dc;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+/***** Expériences *****/
+
+#experiences{
+  background-color: #cfd8dc;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+#experiences span{
+  color: #01579b;
+  font-weight: 700;
+}
+
+/***** Compétences *****/
+
+#competences{
+  background-color: #607d8b;
+  color: #cfd8dc;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+table.highlight>tbody>tr:hover{
+  background-color: #90a4ae;
+}
+
+/***** Creation *****/
+
+#creation{
+  background-color: #cfd8dc;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.collapsible-body{
+  background-color: #ffffff;
+}
+.collapsible-header, .collapsible-header.active{
+  background-color: #90a4ae;
+}
+
+/***** Contact *****/
+
+#contact{
+  background-color: #607d8b;
+  color: #cfd8dc;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+#form-contact {
+  background-color: #ffffff;
+  padding: 1%;
+  color: #90a4ae;
+}
+.btn{
+  background-color: #01579b;
+}
+.btn:hover{
+  background-color: #0288d1;
+}
+
+/***** Param Form *****/
+
+input[type=text]:focus:not([readonly]){
+  border-bottom: 1px solid #01579b;
+  box-shadow: 0 1px 0 0 #01579b;
+}
+input[type=text]:focus:not([readonly]) + label{
+  color: #01579b;
+  background-color: #ffffff;
+}
+input[type=tel]:focus:not([readonly]){
+  border-bottom: 1px solid #01579b;
+  box-shadow: 0 1px 0 0 #01579b;
+}
+input[type=tel]:focus:not([readonly]) + label{
+  color: #01579b;
+  background-color: #ffffff;
+}
+.input-field .prefix.active{
+  color: #01579b;
+  background-color: #ffffff;
+}
+textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: 1px solid #01579b;
+  box-shadow: 0 1px 0 0 #01579b;
+}
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #01579b;
+  background-color: #ffffff;
+}
+
+/***** Footer *****/
+
+footer.page-footer{
+  margin-top: 0;
+  background-color: #01579b;
+}
+.socials{
+  display: block;
+  margin-left: auto;
+  text-align: center;
+  min-height: 60px;
+}
+.social{
+  display: inline-block;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  margin-left: 1%;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.facebook{
+  background-image: url(../img/sprite.png);
+}
+.facebook:hover{
+  background-image: url(../img/sprite.png);
+  background-position: 0px 42px;
+}
+.twitter{
+  background-image: url(../img/sprite.png);
+  background-position: 126px 126px;
+}
+.twitter:hover{
+  background-image: url(../img/sprite.png);
+  background-position: 126px 42px;
+}
+.linkedin{
+  background-image: url(../img/sprite.png);
+  background-position: 294px 126px;
+}
+.linkedin:hover{
+  background-image: url(../img/sprite.png);
+  background-position: 294px 42px;
+}
+.git{
+  background-image: url(../img/sprite.png);
+  background-position: 210px 126px;
+}
+.git:hover{
+  background-image: url(../img/sprite.png);
+  background-position: 210px 42px;
+}
+.google{
+  background-image: url(../img/sprite.png);
+  background-position: 336px 126px;
+}
+.google:hover{
+  background-image: url(../img/sprite.png);
+  background-position: 336px 42px;
 }
