@@ -6,7 +6,7 @@ body{
   display: inline-block;
   vertical-align: top;
   padding-left: 20px;
-  color: #ffffff;
+  color: #cfd8dc;
 }
 .img-header img{
   position: relative;
@@ -33,8 +33,18 @@ body{
 
 /***** Nav *****/
 
-nav{
+.tabs{
   background-color: #01579b;
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+  background-color: transparent;
+  color: #ffffff;
+}
+.tabs .tab a{
+  color: #cfd8dc;
+}
+.tabs .indicator{
+  background-color: #ffffff;
 }
 
 /***** Présentation *****/
@@ -42,15 +52,15 @@ nav{
 #presentation{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 2%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 6%;
 }
 
 /***** Expériences *****/
 
 #experiences{
   background-color: #cfd8dc;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 3%;
 }
 #experiences span{
@@ -63,7 +73,7 @@ nav{
 #competences{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 3%;
 }
 table.highlight>tbody>tr:hover{
@@ -74,8 +84,8 @@ table.highlight>tbody>tr:hover{
 
 #creation{
   background-color: #cfd8dc;
-  padding-top: 2%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 9%;
 }
 .collapsible-body{
   background-color: #ffffff;
@@ -89,7 +99,7 @@ table.highlight>tbody>tr:hover{
 #contact{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 3%;
 }
 #form-contact {

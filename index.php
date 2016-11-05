@@ -36,23 +36,21 @@
         </div>
       </div>
 
-      <nav>
-        <div class="nav-wrapper">
-          <ul class="left hide-on-med-and-down">
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Expériences</a></li>
-            <li class="active"><a href="#">Compétences</a></li>
-            <li><a href="#">Réalisations</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="nav-wrapper">
+        <ul class="left hide-on-med-and-down tabs">
+          <li class="tab"><a href="#presentation">Présentation</a></li>
+          <li class="tab"><a href="#experiences">Expériences</a></li>
+          <li class="tab"><a href="#competences">Compétences</a></li>
+          <li class="tab"><a href="#creation">Réalisations</a></li>
+          <li class="tab"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <!-- /Container-fluid  HEADER -->
 
     <div class="container-fluid" id="container">
       <!-- Présentation -->
-      <div class="row" id="presentation">
+      <div class="row presentation" id="presentation">
         <div class="col s6 offset-s3">
           <h4>Bienvenue sur mon CV !</h4>
           <p>
@@ -70,7 +68,7 @@
       <!-- /Présentation -->
 
       <!-- Expériences -->
-      <div class="row" id="experiences">
+      <div class="row experiences" id="experiences">
         <div class="col s6 offset-s3">
           <h4>Mes Expériences</h4>
           <p>
@@ -91,7 +89,7 @@
       <!-- /Expériences -->
 
       <!-- Compétences -->
-      <div class="row" id="competences">
+      <div class="row competences" id="competences">
         <div class="col s6 offset-s3">
           <h4>Mes Compétences</h4>
           <p>
@@ -168,7 +166,7 @@
       <!-- /Compétences -->
 
       <!-- Création -->
-      <div class="row" id="creation">
+      <div class="row creation" id="creation">
         <div class="col s6 offset-s3">
           <h4>Mes Créations</h4>
           <ul class="collapsible" data-collapsible="expandable">
@@ -190,7 +188,7 @@
       <!-- /Création -->
 
       <!-- Contact -->
-      <div class="row" id="contact">
+      <div class="row contact" id="contact">
         <div class="col s6 offset-s3">
           <h4>Me Contacter</h4>
           <p>
