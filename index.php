@@ -36,7 +36,8 @@
         </div>
       </div>
 
-      <div class="nav-wrapper">
+      <!-- Nav M & L -->
+      <div class="nav-wrapper col m12 l12 hide-on-med-and-down">
         <ul class="left hide-on-med-and-down tabs">
           <li class="tab"><a href="#presentation">Présentation</a></li>
           <li class="tab"><a href="#experiences">Expériences</a></li>
@@ -46,6 +47,28 @@
         </ul>
       </div>
     </div>
+    <!-- /Nav M & L -->
+    <!-- Nav S -->
+    <nav class="col s12 hide-on-large-only">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#creation">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#creation">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /Nav S -->
     <!-- /Container-fluid  HEADER -->
 
     <div class="container-fluid" id="container">
