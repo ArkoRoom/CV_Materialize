@@ -16,9 +16,17 @@
     <link rel="stylesheet" href="public/css/style.css" media="screen" title="no title">
     <link rel="icon" type="image/png" href="public/img/cherry.jpg" />
   </head>
-  <body>
+  <body id="body">
     <!-- Container-fluid HEADER -->
     <div class="container-fluid">
+      <!-- Arrow Top -->
+      <a href="#body" class="arrow-top">
+        <div>
+          <i class="fa fa-chevron-up fa-2x"></i>
+        </div>
+      </a>
+      <!-- /Arrow Top -->
+
       <div class="row" id="img_header">
         <div class="col s6 offset-s3 center-align">
           <div id="header">
@@ -35,36 +43,24 @@
           </div>
         </div>
       </div>
-
-      <!-- Nav M & L -->
-      <div class="nav-wrapper col m12 l12 hide-on-med-and-down">
-        <ul class="left hide-on-med-and-down tabs">
-          <li class="tab"><a href="#presentation">Présentation</a></li>
-          <li class="tab"><a href="#experiences">Expériences</a></li>
-          <li class="tab"><a href="#competences">Compétences</a></li>
-          <li class="tab"><a href="#creation">Réalisations</a></li>
-          <li class="tab"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
     </div>
-    <!-- /Nav M & L -->
     <!-- Nav S -->
-    <nav class="col s12 hide-on-large-only">
+    <nav class="col s12">
       <div class="nav-wrapper">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#experiences">Expériences</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#creation">Réalisations</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#presentation" class="move">Présentation</a></li>
+          <li><a href="#experiences" class="move">Expériences</a></li>
+          <li><a href="#competences" class="move">Compétences</a></li>
+          <li><a href="#creation" class="move">Réalisations</a></li>
+          <li><a href="#contact" class="move">Contact</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#experiences">Expériences</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#creation">Réalisations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#presentation" class="move">Présentation</a></li>
+          <li><a href="#experiences" class="move">Expériences</a></li>
+          <li><a href="#competences" class="move">Compétences</a></li>
+          <li><a href="#creation" class="move">Réalisations</a></li>
+          <li><a href="#contact" class="move">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -87,6 +83,13 @@
             <a class="waves-effect waves-light btn"><i class="material-icons left">settings_applications</i>Développeur Web</a>
           </div>
         </div>
+        <div class="col s8 offset-s2" id="arrow">
+          <a href="#experiences" class="arrow-bottom">
+            <div>
+              <i class="fa fa-chevron-down fa-3x"></i>
+            </div>
+          </a>
+        </div>
       </div>
       <!-- /Présentation -->
 
@@ -107,6 +110,13 @@
             <br><br>
             <span>Septembre 2012 à Aout 2015 :</span> Diverses expériences dans le domaine des industries graphiques en intérim ou CDD.
           </p>
+        </div>
+        <div class="col s8 offset-s2" id="arrow">
+          <a href="#competences" class="arrow-bottom">
+            <div>
+              <i class="fa fa-chevron-down fa-3x"></i>
+            </div>
+          </a>
         </div>
       </div>
       <!-- /Expériences -->
@@ -185,6 +195,13 @@
             </p>
           </div>
         </div>
+        <div class="col s8 offset-s2" id="arrow">
+          <a href="#creation" class="arrow-bottom">
+            <div>
+              <i class="fa fa-chevron-down fa-3x"></i>
+            </div>
+          </a>
+        </div>
       </div>
       <!-- /Compétences -->
 
@@ -206,6 +223,13 @@
               <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
           </ul>
+        </div>
+        <div class="col s8 offset-s2" id="arrow">
+          <a href="#contact" class="arrow-bottom">
+            <div>
+              <i class="fa fa-chevron-down fa-3x"></i>
+            </div>
+          </a>
         </div>
       </div>
       <!-- /Création -->

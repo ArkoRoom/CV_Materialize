@@ -3,9 +3,33 @@ body{
   font-size: 1.3em;
 }
 
-/***** Nav M & L *****/
+/***** Arrow Top *****/
 
-/***** Nav S *****/
+.arrow-top{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 102px;
+  background-color: #455a64;
+  color: #0288d1;
+  border-radius: 10px 0px 0px 10px;
+  text-align: center;
+  z-index: 1;
+}
+.arrow-top:hover{
+  color: #29b6f6;
+  background-color: #455a64;
+}
+.arrow-top i{
+  position: relative;
+  animation: scrollTop 1s infinite;
+}
+@keyframes scrollTop {
+  0% {top: 5px;}
+  50% {top: 15px;}
+  100% {top: 5px;}
+}
 
 /***** Header *****/
 
@@ -28,10 +52,10 @@ body{
   min-width: 300px;
 }
 #header{
-  margin-top: 2%;
-  margin-bottom: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding-top: 2%;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   padding-left: 1%;
 }
 .row {
@@ -40,18 +64,33 @@ body{
 
 /***** Nav *****/
 
-.tabs{
+nav {
   background-color: #01579b;
 }
-.tabs .tab a:hover, .tabs .tab a.active{
-  background-color: transparent;
-  color: #ffffff;
+
+/***** Arrow Bottom *****/
+
+#arrow{
+  padding-top: 3%;
 }
-.tabs .tab a{
-  color: #cfd8dc;
+.arrow-bottom{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  animation: scrollBottom 1s infinite;
+  color: #01579b;
 }
-.tabs .indicator{
-  background-color: #ffffff;
+.arrow-bottom:hover{
+  color: #0288d1;
+}
+.arrow-bottom:focus{
+  color: #01579b;
+}
+@keyframes scrollBottom {
+  0% {top: 0px;}
+  50% {top: 10px;}
+  100% {top: 0px;}
 }
 
 /***** Présentation *****/
@@ -59,15 +98,15 @@ body{
 #presentation{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 5%;
-  padding-bottom: 6%;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 
 /***** Expériences *****/
 
 #experiences{
   background-color: #cfd8dc;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 3%;
 }
 #experiences span{
@@ -80,7 +119,7 @@ body{
 #competences{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 3%;
 }
 table.highlight>tbody>tr:hover{
@@ -91,8 +130,8 @@ table.highlight>tbody>tr:hover{
 
 #creation{
   background-color: #cfd8dc;
-  padding-top: 5%;
-  padding-bottom: 9%;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 .collapsible-body{
   background-color: #ffffff;
@@ -106,7 +145,7 @@ table.highlight>tbody>tr:hover{
 #contact{
   background-color: #607d8b;
   color: #cfd8dc;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 3%;
 }
 #form-contact {
