@@ -296,36 +296,81 @@
             A bientôt !
           </p>
         </div>
-        <form class="col l4 offset-l4 s10 offset-s1" id="form-contact">
+        <form class="col l4 offset-l4 s10 offset-s1" id="form-contact" action="index.php" method="post">
+          <?php
+            $validate = true;
+          ?>
           <div class="input-field col s12">
             <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
+            <input id="icon_prefix" type="text" class="validate" name="name" placeholder="Votre nom...">
+            <?php
+              if (isset($_POST['name']) && strlen($_POST['name']) < 3 && strlen($_POST['name']) > 30) {
+                $validate = false;
+                echo "<p class='error'>Erreur ! Vous devez saisir un nom compris entre 3 et 30 caractères.</p>";
+              }
+            ?>
             <label for="icon_prefix">Nom</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
+            <input id="icon_prefix" type="text" class="validate" name="firstname" placeholder="Votre prénom...">
+            <?php
+              if (isset($_POST['firstname']) && strlen($_POST['firstname']) < 3 && strlen($_POST['firstname']) > 30) {
+                $validate = false;
+                echo "<p class='error'>Erreur ! Vous devez saisir un nom compris entre 3 et 30 caractères.</p>";
+              }
+            ?>
             <label for="icon_prefix">Prénom</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">email</i>
-            <input id="icon_telephone" type="tel" class="validate">
+            <input id="icon_telephone" type="tel" class="validate" name="mail" placeholder="Votre adresse e-mail...">
+            <?php
+              if (isset($_POST['mail']) && !filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
+                $validate = false;
+                echo "<p class='error'>Erreur ! Vous devez saisir une adresse e-mail valide.</p>";
+              }
+            ?>
             <label for="icon_telephone">Adresse e-mail</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">textsms</i>
-            <input id="icon_prefix" type="text" class="validate">
+            <input id="icon_prefix" type="text" class="validate" name="subject" placeholder="Sujet de votre message...">
+            <?php
+              if (isset($_POST['subject']) && strlen($_POST['subject']) < 5 && strlen($_POST['subject']) > 64) {
+                $validate = false;
+                echo "<p class='error'>Erreur ! Vous devez saisir un sujet compris entre 5 et 64 caractères.</p>";
+              }
+            ?>
             <label for="icon_prefix">Sujet</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">description</i>
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <textarea id="textarea1" class="materialize-textarea" rows="8" name="message" placeholder="Votre message..."></textarea>
+            <?php
+              if (isset($_POST['message']) && strlen($_POST['message']) < 30 && strlen($_POST['message']) > 5000) {
+                $validate = false;
+                echo "<p class='error'>Erreur ! Vous devez saisir un message plus long ou plus court.</p>";
+              }
+            ?>
             <label for="textarea1">Message</label>
           </div>
           <div class="center-align">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+            <button class="btn waves-effect waves-light" type="submit" name="submit">Envoyer
               <i class="material-icons right">done</i>
             </button>
+            <?php
+              if (isset($_POST['submit']) && $validate) {
+                $to      = 'catel.ludovic@gmail.com';
+                $subject = $_POST['subject'];
+                $message = $_POST['message'];
+                $headers = $_POST['mail'] . "\r\n";
+
+                mail($to, $subject, $message, $headers);
+
+               echo "<p class='success'>Message envoyé !</p>";
+              }
+            ?>
           </div>
         </form>
       </div>
