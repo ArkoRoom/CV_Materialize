@@ -140,6 +140,43 @@ table.highlight>tbody>tr:hover{
   background-color: #90a4ae;
 }
 
+/***** Mini Jeux *****/
+
+.wrap-img{
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  padding-left: 3px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+.container-div{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 495px;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+#formUser {
+  padding-left: 3%;
+}
+#restart{
+  display: none;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+#answerUser{
+  width: 40%;
+  padding-left: 1%;
+}
+#delete-div, #validAnswer{
+  display: block;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
 /***** Contact *****/
 
 #contact{
@@ -147,6 +184,10 @@ table.highlight>tbody>tr:hover{
   color: #cfd8dc;
   padding-top: 3%;
   padding-bottom: 3%;
+}
+#contact span{
+  color: #01579b;
+  font-weight: 700;
 }
 #form-contact {
   background-color: #ffffff;
@@ -157,6 +198,9 @@ table.highlight>tbody>tr:hover{
   background-color: #01579b;
 }
 .btn:hover{
+  background-color: #0288d1;
+}
+.btn:focus{
   background-color: #0288d1;
 }
 

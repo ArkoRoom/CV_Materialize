@@ -28,11 +28,8 @@
       <!-- /Arrow Top -->
 
       <div class="row" id="img_header">
-        <div class="col s6 offset-s3 center-align">
+        <div class="col l6 offset-l3 s10 offset-s1 center-align">
           <div id="header">
-            <div class="img-header">
-              <img src="public/img/profile_picture.jpg" alt="Profile_Catel_Ludovic" />
-            </div>
             <div class="txt-header">
               <h1>CATEL Ludovic<br>
               Dévelopeur Web Junior
@@ -70,7 +67,7 @@
     <div class="container-fluid" id="container">
       <!-- Présentation -->
       <div class="row presentation" id="presentation">
-        <div class="col s6 offset-s3">
+        <div class="col l6 offset-l3 s10 offset-s1">
           <h4>Bienvenue sur mon CV !</h4>
           <p>
             A l'origine formé dans le domaine de la Communication et des Industries Graphiques, c'est en 2015 que j'ai décidé de me réorienter dans le domaine du Web. <br>
@@ -79,14 +76,15 @@
             Vous pouvez accéder aux certificats obtenus lors de la formation Webforce3 en cliquant ci-dessous.
           </p>
           <div class="center-align">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">web</i>Intégrateur Web</a>
-            <a class="waves-effect waves-light btn"><i class="material-icons left">settings_applications</i>Développeur Web</a>
+            <a class="waves-effect waves-light btn" href="public/download/integrateur.pdf" target="_blank"><i class="material-icons left">web</i>Intégrateur Web</a>
+            <a class="waves-effect waves-light btn" href="public/download/developpeur.pdf" target="_blank"><i class="material-icons left">settings_applications</i>Développeur Web</a>
           </div>
         </div>
         <div class="col s8 offset-s2" id="arrow">
           <a href="#experiences" class="arrow-bottom">
             <div>
-              <i class="fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-med-and-down fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-large-only fa fa-chevron-down fa-2x"></i>
             </div>
           </a>
         </div>
@@ -95,7 +93,7 @@
 
       <!-- Expériences -->
       <div class="row experiences" id="experiences">
-        <div class="col s6 offset-s3">
+        <div class="col l6 offset-l3 s10 offset-s1">
           <h4>Mes Expériences</h4>
           <p>
             Etant actuellement Développeur Junior, je n'ai pas d'expériences significatives dans le domaine du Web.
@@ -114,7 +112,8 @@
         <div class="col s8 offset-s2" id="arrow">
           <a href="#competences" class="arrow-bottom">
             <div>
-              <i class="fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-med-and-down fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-large-only fa fa-chevron-down fa-2x"></i>
             </div>
           </a>
         </div>
@@ -123,12 +122,12 @@
 
       <!-- Compétences -->
       <div class="row competences" id="competences">
-        <div class="col s6 offset-s3">
+        <div class="col l6 offset-l3 s10 offset-s1">
           <h4>Mes Compétences</h4>
           <p>
             Voici le détail de mes compétences :
           </p>
-          <div class="col s5 offset-s1">
+          <div class="col l5 offset-l1 s12">
             <h5>Web</h5>
             <table class="bordered highlight responsive-table">
               <thead>
@@ -170,7 +169,7 @@
               <span>Autres : </span>Sublime Text, Atom, Npm, Bower, Composer, Git, Trello.
             </p>
           </div>
-          <div class="col s5">
+          <div class="col l5 offset-l1 s12">
             <h5>Print</h5>
             <table class="bordered highlight responsive-table">
               <thead>
@@ -198,7 +197,8 @@
         <div class="col s8 offset-s2" id="arrow">
           <a href="#creation" class="arrow-bottom">
             <div>
-              <i class="fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-med-and-down fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-large-only fa fa-chevron-down fa-2x"></i>
             </div>
           </a>
         </div>
@@ -207,27 +207,76 @@
 
       <!-- Création -->
       <div class="row creation" id="creation">
-        <div class="col s6 offset-s3">
+        <div class="col l6 offset-l3 s10 offset-s1">
           <h4>Mes Créations</h4>
           <ul class="collapsible" data-collapsible="expandable">
             <li>
               <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Réalisations / Participations</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-body">
+                <p>
+                  Vous pouvez trouver ici quelques liens vers les sites que j'ai pu réaliser lors de mes formations. <br>
+                  Vous avez aussi un lien vers mon profil LinkedIn ainsi que vers mon GitHub.
+                </p>
+                <ul class="center">
+                  <a href="http://btech-lille.com/btech7/x2000/html/formations.html" target="_blank">x2000</a>
+                  <a href="https://github.com/ArkoRoom" target="_blank">Github</a>
+                  <a href="https://fr.linkedin.com/in/ludovic-catel" target="_blank">LinkedIn</a>
+                </ul>
+              </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">place</i>Réalisation / Mini-jeux</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-body">
+                <div class="text-rules">
+                  <h3 class="center">Mini-Jeux du <br><i>C'est plus ou c'est moins !</i></h3>
+                  <p>
+                    Bienvenue dans ce Mini-Jeu ! <br>
+                    La règle est simple. L'ordinateur a sélectionner un chiffre aléatoirement entre 1 et 100. <br>
+                    Vous disposez de 6 éssais maximum pour trouver ce chiffre. <br>
+                    Bonne chance !
+                  </p>
+                </div>
+                <form id="formUser">
+                  <div class="form-group">
+                    <label for="answerUser">Votre réponse</label>
+                    <input type="number" name="answerUser" id="answerUser" value="">
+                  </div>
+                  <input class="btn btn-default" type="button" name="validAnswer" id="validAnswer" value="Valider">
+                </form>
+                <div class="answer">
+
+                </div>
+                  <input type="button" name="restart" class="btn" id="restart" value="Rejouez">
+              </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">whatshot</i>Réalisation / Effet</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-body">
+                <div class="use-advice">
+                      <h3>Discover</h3>
+                      <p>
+                        Discover est un petit script qui permets de révéler une partie de l'image en cliquant simplement sur le bouton sous l'image.<br>
+                        Des carrés disparaissent alors permettant de révéler une partie de l'image.<br>
+                        L'image est générée grâce à une variable aléatoire.
+                      </p>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1">
+                      <div class="wrap-img">
+                        <div class="container-div">
+
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" class="btn btn-default" id="delete-div" name="name" value="Supprimer des carrés">
+              </div>
             </li>
           </ul>
         </div>
         <div class="col s8 offset-s2" id="arrow">
           <a href="#contact" class="arrow-bottom">
             <div>
-              <i class="fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-med-and-down fa fa-chevron-down fa-3x"></i>
+              <i class="hide-on-large-only fa fa-chevron-down fa-2x"></i>
             </div>
           </a>
         </div>
@@ -236,16 +285,18 @@
 
       <!-- Contact -->
       <div class="row contact" id="contact">
-        <div class="col s6 offset-s3">
+        <div class="col l6 offset-l3 s10 offset-s1">
           <h4>Me Contacter</h4>
           <p>
             Vous arrivez aux termes de ce CV.<br>
             Merci de votre visite et n'hésitez pas à me contacter via le formulaire ci-dessous pour toutes demandes et/ou renseignements.<br>
-            N'hésitez pas à me suivre sur mes réseaux sociaux disponible dans le bas de la page.<br><br>
+            N'hésitez pas à me suivre sur mes réseaux sociaux disponible dans le bas de la page.<br>
+            Vous pouvez également me contacter directement à cette adresse : <span>catel.ludovic@gmail.com.</span><br>
+            Ou via le formulaire ci-dessous. <br><br>
             A bientôt !
           </p>
         </div>
-        <form class="col s4 offset-s4" id="form-contact">
+        <form class="col l4 offset-l4 s10 offset-s1" id="form-contact">
           <div class="input-field col s12">
             <i class="material-icons prefix">account_circle</i>
             <input id="icon_prefix" type="text" class="validate">
@@ -286,7 +337,7 @@
     <footer class="page-footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col s6 offset-s3">
+          <div class="col l6 offset-l3 s10 offset-s1">
             <h5 class="white-text">Me suivre</h5>
             <div class="col s12 socials">
               <a href="https://www.facebook.com/Arkolips" target="_blank">
